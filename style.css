@@ -70,7 +70,6 @@ header nav ul li{
     /* width: 676px; */
     color: #FFF;
     text-align: center;
-    font-family: Mulish;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -266,7 +265,76 @@ main{
     font-weight: 400;
     line-height: 26px; /* 162.5% */
 }
-
+.handpick-hotel img, .world-class-service img, .best-price img{
+    display: block;
+    width: 50px;
+}
+.hotels-and-services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.handpick-hotel{
+    padding: 32px;
+    width: auto;
+    /* height: 284px; */
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.world-class-service{
+    padding: 32px;
+    width: auto;
+    /* height: 284px; */
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.best-price{
+    padding: 32px;
+    width: 573px;
+    /* height: 284px; */
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+.choose-us-tittle{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+.choose-us-desc{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 486px; 
+}
+.price-gurantee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+.why-choose-us{
+    margin: 100px auto;
+}
+.section-tittle-and-desc{
+text-align: center;
+display: grid;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
+}
+.section-tittle-and-desc p{
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 0;
+    width: 643px;
+}
 
 
 @media screen and (max-width:600px) {
@@ -332,5 +400,25 @@ main{
         grid-template-columns: 1fr;
         gap: 16px;
         margin: auto;
+    }
+    .section-tittle-and-desc p {
+        width: 74%;
+        margin: auto;
+    }
+    .hotels-and-services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    } 
+    .handpick-hotel, .world-class-service, .best-price{
+        width: 270px;
+        height: 289px;
+
+    }
+
+    .choose-us-desc{
+        width: auto;
     }
 }
