@@ -1,10 +1,10 @@
 body{
     margin: 0;
-    padding: 20px;
+    
     font-family: 'Mulish', sans-serif;
 }
 header{
-    /* padding: 20px; */
+    padding: 20px;
 }
 .main-logo{
     width: 30px;
@@ -115,6 +115,7 @@ header nav ul li{
 }
 main{
     margin: 100px 0;
+    padding: 20px;
 }
 .popular-tours{
     display: flex;
@@ -426,7 +427,77 @@ margin-bottom: 30px;
     font-style: normal;
     margin-bottom: 0;
 }
+.feedback-section{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.feedbacks{
+    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.customer-name{
+    color: #131318;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+.review{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.profiles{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+}
+.profiles span{
+    color: #FF5400;
+}
+.imgg{
+    background-image: url("Images/kiara\ advani.jpeg");
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 
+    margin: auto;
+}
+.imgg-emma{
+    background-image: url("Images/emma.jpeg");
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    margin: auto;
+}
+.imgg-jack{
+    background-image: url("Images/captain-jack-sparrow.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+    margin: auto;
+}
+
+.profiles img{
+    width: 150px;
+    border-radius: 50px;
+    border: 1px solid #FF5400;
+}
 footer{
     justify-content: center;
     align-items: center;
@@ -575,5 +646,22 @@ footer hr{
     }
     .save-up-to h2{
         font-size: 21.13px;
+    }
+    .copyright{
+        margin: 20px 0;
+    }
+    .footer-content{
+        width: 70%;
+    }
+    footer hr{
+        margin: 44px 0;
+    }
+    .feedbacks{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .profiles{
+        width: 50%;
+        padding: 20px;
     }
 }
